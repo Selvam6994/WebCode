@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.logo {
+  height: 100px;
+  margin: -10px 40px 0 0;
+}
+
+.search {
+  max-width: 500px;
+  height: 40px;
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+
+.searchBar {
+  width: 90%;
+  height: 100%;
+  border: 2px solid rgb(212, 210, 210);
+  font-size: 20px;
+  text-transform: capitalize;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.searchBtn {
+  width: 40px;
+  height: 100%;
+  background-color: rgb(212, 210, 210);
+  border: 2px solid rgb(212, 210, 210);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: none;
+}
+
+.searchBtn img {
+  height: 80%;
+}
+
+.options {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.options .optionIcon {
+  height: 80%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.userImage {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sideMenu {
+  position: fixed;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 60px;
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+  padding-right: 10px;
+}
+.sideMenu a {
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.sideMenu a:hover {
+  background-color: rgb(212, 210, 210);
+  color: black;
+}
+.active {
+  background-color: rgb(212, 210, 210);
+  color: black;
+}
+.menuOptions img {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.menuOptions {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: rgb(56, 55, 55);
+  font-size: 20px;
+  font-weight: 500;
+}
+.topOptions {
+  position: absolute;
+  width: 80%;
+  height: 60px;
+  top: 60px;
+  left: 250px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.topOptions button {
+  margin-right: 30px;
+  border-radius: 10px;
+  border-color: rgb(212, 210, 210);
+  color: black;
+  padding: 10px 20px;
+}
+.short_hand_options {
+  width: 100%;
+}
+.topOptions .active {
+  background-color: rgb(43, 42, 42);
+  color: antiquewhite;
+}
+
+.video {
+  position: absolute;
+  height: fit-content;
+  top: 140px;
+  left: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
+}
+.card{
+    width: 300px;
+    height:fit-content;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover{
+    color: black;
+}
+
+
+.channelIcon {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.channelInfo {
+  margin-left: 10px;
+}
+
+.card-body {
+  display: flex;
+}
